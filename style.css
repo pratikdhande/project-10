@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald:wght@700&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    background: url(/images/retro-living-room-interior-design.jpg) no-repeat center;
+    background-size:cover;
+    font-family: Roboto;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo{
+    width: 150px;
+    color:#e6ebec;
+    margin-left: 60px;
+    font-family: Roboto;
+    font-size: 22px;
+}
+.list{
+    /* list-style: none; */
+    display: flex;
+    gap: 30px;
+}
+.list li{
+    color:#e6ebec;
+    margin-left: 30px;
+    font-family: Roboto,"sans-serif";
+    font-size: 19px;
+}
+.list li:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+.call-us{
+    display: flex;
+    margin-right: 65px;
+}
+.phone{
+    width: 30px; 
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+    z-index: -1;
+}
+.call-us h4{
+    color:#e6ebec;
+    font-size: 20px;
+}
+.line{
+    display: flex;
+    width: 71%;
+    margin-left: 390px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #ffffff;
+    /* border-width: px;    */
+}
+.row{
+    display:flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+.row-heading h1{
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 55px;
+    font-family: Montserrat;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.btn{
+    margin-left: 110px;
+    margin-top: 30px;
+    padding: 12px 50px;
+    border:2px solid #fff;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #e6ebec;
+    font-size: 22px;
+    cursor: pointer;
+}
+.cards{
+    flex-basis: 50%;
+}
+.right{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* border: 2px solid yellow; */
+}
+.card{
+    height: 150px;
+    width: 250px;
+    background-color: rgba(132,156,170,0.3);
+    opacity: 1;
+    position: relative;
+    left: 320px;
+    /* top:20px; */
+}
+.card2{
+    height: 150px;
+    width: 250px;
+    background-color: rgba(132,156,170,0.3);
+    opacity: 1;
+    margin-top: 7.6em;
+    /* position: relative;
+    top: 150px;
+    left: 30px; */
+}
+/* .second-card-holder{
+    border: 2px solid red;
+}
+.line-circle{
+    position: relative;
+    height: 50px;
+    width: fit-content;
+    margin: 0px auto;
+} */
+.vl{
+    border-left: 2px solid rgb(255,255,255);
+    background-color: #fff;
+    position: absolute;
+    height: 90px;
+    left: 380px;
+    /* top: 172px; */
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 370px;
+    top: 235px;
+}
+.vl2{
+    border-top: 2px solid rgb(255,255,255);
+    background-color: #fff;
+    position: absolute;
+    width: 90px;
+    left: 250px;
+    top: 350px;
+}
+.circle-2{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 338px;
+    top: 340px;
+}
+.card-logo{
+    background-color: #fff;
+    height: 35px;
+    width: 70px;
+    border-radius: 20px;
+    padding: 2px;
+    margin-left: 20px;
+    margin-top: 15px;
+
+}
+.card-head{
+    margin-left: 20px;
+    margin-top: 15px;
+    color:#e6ebec;
+    font-weight: 200;
+}
+/* -----------------------@media query--------------------- */
+
+@media (max-width: 920px){
+    /* body{
+        overflow:visible;
+        width: 100%;
+        height: 100vh;
+    } */
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0;
+        position:relative;
+    }
+    .list{
+        flex-direction: column;
+        margin: 0;
+    }
+    .logo{
+        align-self: flex-start;
+        padding: 10px;
+    }
+    .call-us{
+        /* align-self: flex-end; */
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .line{
+        /* margin: 0; */
+        margin-bottom: 0;
+        margin: auto;
+    }
+    .row{
+        flex-direction: column;
+        /* height: 100vh; */
+        justify-content: center;
+
+    }
+    .row-heading {
+        margin: 0px auto;
+    }
+    .row-heading h1{
+        font-size: 38px;
+        margin: 0;
+    }
+    .btn{
+        font-size: 18px;
+        margin-left: 30px;
+    }
+    .right{
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .card{
+        margin: 30px auto;
+        position: static;
+    }
+    .card2{
+        margin: 30px auto;
+        position: static;
+    }
+    .vl,.vl2,.circle,.circle-2{
+        display: none;
+    }
+    
+
+}
